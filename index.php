@@ -12,7 +12,7 @@
 
 <body>
     <div class="container pt-5">
-        <button type="button" id="btnStart" class="btn btn-primary">GRABAR</button>
+        <button type="button" id="btnStart" class="btn btn-primary">GRABAR1</button>
         <button type="button" id="btnStop" class="btn btn-danger">DETENER</button>
     </div>
 
