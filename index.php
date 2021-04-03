@@ -12,7 +12,7 @@
 
 <body>
     <div class="container pt-5">
-        <button type="button" id="btnStart" class="btn btn-primary">GRABAR1</button>
+        <button type="button" id="btnStart" class="btn btn-primary">GRABAR</button>
         <button type="button" id="btnStop" class="btn btn-danger">DETENER</button>
     </div>
 
@@ -34,8 +34,13 @@
         }
 
         function resultadoGrabacion(event){
-            console.log("resultadoGrabacion");
-            // console.log(event);
+            console.log('\n\n==========\n\nonresult\n----------\n');
+
+            console.log('Transcript' + event.results[event.results.length-1][0].transcript);
+            console.log('Confidence: ' + event.results[event.results.length-1][0].confidence);
+            console.log('results' + event.results);
+
+            console.log('Tú has dicho: '+event.results[event.results.length-1][0].transcript);
         }
 
         function errorGrabacion(event){
